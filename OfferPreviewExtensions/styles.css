@@ -1,0 +1,27 @@
+body {
+    width: 750px;
+}
+.cover {
+    object-fit: cover;
+    width: 375px;
+    height: 250px;
+  }
+
+.thickline {
+    border-bottom-color: rgb(209, 209, 209);
+    border-bottom-width: 5px;
+}
+
+.sample-badge {
+    background-color: #f0b323;
+    color: #000;
+    font-size: 1.5rem;
+    
+}
+.sample-badge::after {
+    border-top-color: #f0b323;
+}
+
+a:link {
+    text-decoration: none;
+}

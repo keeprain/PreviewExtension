@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src='mobilepreview.js'></script>
+    <link href="styles.css" rel="stylesheet" type="text/css" id="app-css">
+    <link href="1.css" rel="stylesheet" type="text/css" id="app-css">
+    <link href="2.css" rel="stylesheet" type="text/css" id="app-css">
+    <link href="3.css" rel="stylesheet" type="text/css" id="app-css">
+    <link href="4.css" rel="stylesheet" type="text/css" id="app-css">
+</head>
+
+<body style="width: 375px; height: 667px;">
+
+    <div id="offerpreview" hidden=true>
+        
+        <img alt="header" src="Header750.png" width="375px" />
+
+
+        <div>
+            <img id='heroimage' class='product-image overlay-image cover' />
+        </div>
+
+        <div class="a-section a-spacing-none a-padding-medium" >
+            <div class="a-section a-spacing-medium" id="sample-badge-div" hidden=true >
+                <i id="sample-badge" class="sample-badge a-icon a-icon-addon" style="background-color: #f0b323; color: #000; font-size: 1.5rem;" >It's free!</i>
+            </div>
+
+            <div class="a-section a-spacing-none">
+                <span id="headline" class="a-size-medium a-color-base">
+                </span>
+            </div>
+            <div class="a-section a-spacing-none a-spacing-top-small">
+                <span id="summary" class="a-color-base">
+                </span>
+            </div>
+
+            <div class="a-section a-spacing-medium a-spacing-top-base a-padding-none" id="priceDiv">
+                <span id="price" class="a-size-large a-color-base a-text-bold">
+                    $XX.00
+                </span>
+                <span id="discount" class="a-size-base a-color-base">
+                    xx% off
+                </span>
+            </div>
+            <span class="a-declarative" data-action="open-checkout" data-open-checkout="{&quot;url&quot;:&quot;https://www.amazon.com:443/tt/webview/purchasing/stops?ref=tt_bb_w2&quot;}">
+                <span class="a-button a-button-primary" id="a-autoid-0">
+                    <span class="a-button-inner">
+                        <input id="iwantthis-button" class="a-button-input" type="submit" aria-labelledby="a-autoid-0-announce">
+                        <span class="a-button-text a-text-center" aria-hidden="true" id="a-autoid-0-announce">
+                            Select a pickup location
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <hr class="thickline no-bottom-margin">
+        <div id="whatyouget" class="a-section a-spacing-none a-padding-medium">
+            <h3 id="whatyouget-header">
+                What's Included
+            </h3>
+            <div id="whatyouget-text" class="a-row a-size-base a-color-base">
+                <!-- <span id="what-is-included-span">what's included text</span> -->
+            </div>
+        </div>
+
+        <hr class="thickline no-bottom-margin">
+        <div class="product-image-container">
+            <img alt="Ring Spotlight Home Camera" src="" class="product-image overlay-image cover" id="altimage1" data-a-manual-replacement="true"
+            />
+        </div>
+        <hr class="thickline no-bottom-margin">
+
+        <div id="whywepickedit" class="a-section a-spacing-none a-padding-medium">
+            <div aria-live="polite" data-a-expander-collapsed-height="200" class="a-expander-collapsed-height a-row a-expander-container a-spacing-none a-expander-partial-collapse-container"
+                style="max-height: none; height: 200px;" id="whywepickedit-middlediv">
+                <div aria-expanded="false" class="a-expander-content a-expander-partial-collapse-content" style="padding-bottom: 20px;" id="whywepickedit-innerdiv">
+                    <h3 id="whywepickedit-header">
+                        Why we picked it
+                    </h3>
+                    <div id="whywepickedit-text" class="a-row a-size-base a-color-base">
+                        <!--  <span id="why-we-picked-it-span">what's included text</span> -->
+                    </div>
+                </div>
+                <div class="a-expander-header a-expander-partial-collapse-header" style="opacity: 1; display: block;">
+                    <div class="a-expander-content-fade" id="whywepickedit-fade"></div>
+                    <!--
+                    <a onclick="toggle('whywepickeditInnerDiv')" href="javascript:void(0)" data-action="a-expander-toggle" class="a-declarative" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;See More&quot;, &quot;collapse_prompt&quot;:&quot;See Less&quot;}">
+                        <i class="a-icon a-icon-extender-expand"></i>
+                        <span class="a-expander-prompt">See More</span>
+                    </a>
+                    -->
+                    <a onclick="javascipt:toggle()" href="javascript:void(0)" id="whywepickedit-seemore">
+                        <i class="a-icon a-icon-extender-expand"></i>
+                        <span class="a-expander-prompt">See More</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <hr class="thickline no-bottom-margin">
+
+        <div id="wewantyoutoknow" class="a-section a-spacing-none a-padding-medium">
+            <div aria-live="polite" data-a-expander-collapsed-height="200" class="a-expander-collapsed-height a-row a-expander-container a-spacing-none a-expander-partial-collapse-container"
+                style="max-height: none; height: 200px;" id="wewantyoutoknow-middlediv">
+                <div aria-expanded="false" class="a-expander-content a-expander-partial-collapse-content" style="padding-bottom: 20px;" id="wewantyoutoknow-innerdiv">
+                    <h3 id="wewantyoutoknow-header">
+                        We want you to know
+                    </h3>
+                    <div id="wewantyoutoknow-text" class="a-row a-size-base a-color-base">
+                        <!-- <span id="we-want-you-to-know-span">what's included text</span> -->
+                    </div>
+                </div>
+                <div class="a-expander-header a-expander-partial-collapse-header" style="opacity: 1; display: block;">
+                    <div class="a-expander-content-fade" id="wewantyoutoknow-fade"></div>
+                    <a onclick="toggle('wewantyoutoknowInnerDiv')" href="javascript:void(0)" data-action="a-expander-toggle" class="a-declarative"
+                        id="wewantyoutoknow-seemore" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;See More&quot;, &quot;collapse_prompt&quot;:&quot;See Less&quot;}">
+                        <i class="a-icon a-icon-extender-expand"></i>
+                        <span class="a-expander-prompt">See More</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="thickline no-bottom-margin">
+
+        <div id="sizeandweight" class="a-section a-spacing-none a-padding-medium">
+            <h3 id="sizeandweight-header">
+                Size and weight
+            </h3>
+            <div id="sizeandweight-text" class="a-row a-size-base a-color-base">
+                <div class="a-section a-spacing-medium a-spacing-top-base a-text-center">
+                    <img alt="This is a small item." src="https://m.media-amazon.com/images/G/01/tesoro/DP/page-assets/Size_Small_x2._V535750388_.png"
+                        id="howtogetithome-image">
+                </div>
+                <h1 class="a-size-base a-text-bold" id="howtogetithome-title">
+                    This is a small item.
+                </h1>
+                <div id="sizeandweight-specifications" class="a-row a-spacing-none a-spacing-top-micro a-size-base a-color-base">
+                    <p>We'll package it up nicely for you so you can grab and go easily (and give high fives).</p>
+                </div>
+                <p class="a-spacing-small a-spacing-top-medium">
+                    <span class="a-size-base a-text-bold">
+                        Package dimensions
+                    </span>
+                </p>
+                <div id="size-and-weight-specifications" class="a-row a-size-base a-color-base">
+                    <p>14.8x2.8x2.8 inches</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="altimge2Div" hidden=true>
+            <hr class="thickline no-bottom-margin">
+            <div class="product-image-container">
+                <img alt="Person using the mobile app to control the time and temperature of the Anova Sous Vide" src="" class="product-image cover"
+                    id="altimage2" data-a-manual-replacement="true">
+            </div>
+        </div>
+        <footer class="nav-mobile nav-locale-us nav-lang-en nav-ftr-batmobile">
+            <div id="nav-ftr" class="nav-t-basic nav-sprite-v3">
+
+                <div class="icp-container-mobile">
+
+                    <style type="text/css">
+                        #icp-touch-link-language {
+                            display: none;
+                        }
+                    </style>
+
+                    <a href="/gp/customer-preferences/select-language/ref=footer_lang/142-0203936-2575715?ie=UTF8&amp;preferencesReturnUrl=%2Ftt%2Fwebview"
+                        class="icp-touch-link-2" id="icp-touch-link-language">
+                        <div class="icp-nav-globe-img-2 icp-mobile-globe-2"></div>
+                        <span class="icp-color-base">English</span>
+                        <span class="nav-arrow icp-up-down-arrow"></span>
+                    </a>
+
+                    <style type="text/css">
+                        #icp-touch-link-country {
+                            display: none;
+                        }
+                    </style>
+
+                    <a href="/gp/navigation-country/select-country/ref=/142-0203936-2575715?ie=UTF8&amp;preferencesReturnUrl=%2Ftt%2Fwebview"
+                        class="icp-touch-link-2" id="icp-touch-link-country">
+                        <span class="icp-flag-3 icp-flag-3-us"></span>
+                        <span class="icp-color-base">United States</span>
+                    </a>
+                </div>
+
+                <div id="nav-switch-account" class="nav-ftr-auth-mobile">
+                    <a href="https://www.amazon.com/ap/signin/142-0203936-2575715?_encoding=UTF8&amp;ignoreAuthState=1&amp;openid.assoc_handle=usamazon&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_youraccount_switchacct&amp;switch_account=picker"
+                        id="nav-item-switch-account-footer" class="nav-a">Switch Accounts</a>
+                </div>
+                <div id="nav-ftr-auth">
+                    <a href="/gp/flex/sign-out.html/ref=nav_m_foot_so/142-0203936-2575715?ie=UTF8&amp;action=sign-out&amp;path=%2Ftt%2Fwebview&amp;signIn=1&amp;useRedirectOnSuccess=1"
+                        class="nav-a">Sign Out</a>
+                </div>
+
+                <ul class="nav-ftr-horiz ">
+                    <li class="nav-li ">
+                        <a href="/gp/aw/help/ref=navm_ftr_cou/142-0203936-2575715?ie=UTF8&amp;id=cou" class="nav-a">Conditions of Use</a>
+                    </li>
+                    <li class="nav-li ">
+                        <a href="https://www.amazon.com/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&amp;nodeId=468496" class="nav-a">Privacy Notice</a>
+                    </li>
+                    <li class="nav-li ">
+                        <a href="/gp/aw/help/ref=navm_ftr_iba/142-0203936-2575715?ie=UTF8&amp;id=201308670" class="nav-a">Interest-Based Ads</a>
+                    </li>
+                </ul>
+                <div id="nav-ftr-copyright">© 1996-2018, Amazon.com, Inc. or its affiliates</div>
+
+                <br>
+                <div style="width:100%;text-align:center;font-size:11px;color:#aaa;">
+                    <b>Internal only:</b>
+                    <a href="https://www.amazon.com//tt/webview/142-0203936-2575715?_encoding=UTF8&amp;%2AVersion%2A=1&amp;%2Aentries%2A=0">Link</a> or
+                    <a href="mailto:?_encoding=UTF8&amp;body=https%3A%2F%2Fwww.amazon.com%2F%2Ftt%2Fwebview%2F142-0203936-2575715%3F_encoding%3DUTF8%26%252AVersion%252A%3D1%26%252Aentries%252A%3D0">mail</a> this page.
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
